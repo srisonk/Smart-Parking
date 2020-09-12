@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">SmartParking</string>
+    <string name="logout">logout</string>
+    <string name="register">register</string>
+    <string name="spinner">Locations</string>
+    <string name="login">Login</string>
+    <string name="password">Password</string>
+    <string name="email">Email</string>
+    <string name="not_registered">not_registered?</string>
+    <string name="phone">Phone</string>
+    <string name="surname">Surname</string>
+    <string name="name">Name</string>
+    <string name="todo">todo</string>
+    <string name="credits">2.00</string>
+</resources>

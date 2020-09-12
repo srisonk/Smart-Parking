@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UserSession"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="#F4EFE9">
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Select a location"
+        android:id="@+id/top_id"/>
+
+    <android.support.v7.widget.AppCompatSpinner
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/location_dropdown"
+        android:prompt="@string/spinner"
+        android:layout_marginTop="10dp">
+    </android.support.v7.widget.AppCompatSpinner>
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Priority (Higher Priority results higher price)"
+        android:id="@+id/type_id"/>
+
+    <android.support.v7.widget.AppCompatSpinner
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/profile_type_dropdown"
+        android:prompt="@string/spinner"
+        android:layout_marginTop="10dp">
+    </android.support.v7.widget.AppCompatSpinner>
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:text="Which vehicle would you like to park?"/>
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <RadioButton
+            android:id="@+id/rdbBike"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Bicycle"/>
+        <RadioButton
+            android:id="@+id/rdbCar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Car"/>
+    </RadioGroup>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/txtSpotNumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        app:errorEnabled="true">
+
+        <android.support.design.widget.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Which spot do you want? (1 to 6)"
+            android:inputType="number"/>
+
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/txtPayAmount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        app:errorEnabled="true">
+
+        <android.support.design.widget.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Amount willing to pay for spot (€1 to €15)"
+            android:inputType="number"/>
+
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/txtParkingRange"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        app:errorEnabled="true">
+
+        <android.support.design.widget.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Distance range for spot (0m to 1000m)"
+            android:inputType="number"/>
+
+    </android.support.design.widget.TextInputLayout>
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:text="Select the desired parking date"/>
+
+    <DatePicker
+        android:datePickerMode="spinner"
+        android:calendarViewShown="false"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:id="@+id/date_picker">
+    </DatePicker>
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:text="Select the end date"/>
+
+    <DatePicker
+        android:datePickerMode="spinner"
+        android:calendarViewShown="false"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:id="@+id/end_date_picker">
+    </DatePicker>
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Select the start time"/>
+
+    <TimePicker
+        android:timePickerMode="spinner"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:id="@+id/start_time">
+    </TimePicker>
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Select the end time"/>
+
+    <TimePicker
+        android:timePickerMode="spinner"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:id="@+id/end_time">
+    </TimePicker>
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:text="What matters to you the most?"/>
+    
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <RadioButton
+            android:id="@+id/rdbLoc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Best Location (might result higher price)"/>
+        <RadioButton
+            android:id="@+id/rdbPri"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Best Price (might result farther location)"/>
+        <RadioButton
+            android:id="@+id/rdbNone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="It doesn't matter"/>
+    </RadioGroup>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Make the reservation!"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/custom_button"
+        android:id="@+id/btn_finalize_res"/>
+</LinearLayout>
+</ScrollView>

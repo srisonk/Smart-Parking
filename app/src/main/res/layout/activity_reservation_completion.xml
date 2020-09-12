@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ReservationCompletion">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:gravity="center"
+        android:background="#F4EFE9">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtCompletion"
+            android:textSize="20dp"
+            android:text="TEXT WILL CHANGE HERE"
+            android:textAlignment="center"
+            android:textStyle="bold"
+            android:layout_marginBottom="10dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtTicketNum"
+            android:textSize="20dp"
+            android:text="TICKET WILL CHANGE HERE"
+            android:textAlignment="center"
+            android:textStyle="bold"
+            android:visibility="invisible"/>
+
+        <Button
+            android:id="@+id/finalHomeBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/custom_button"
+            android:text="Home"
+            android:layout_marginTop="15dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtGate"
+            android:textSize="20dp"
+            android:text="Please let us know when you arrive at your spot"
+            android:textAlignment="center"
+            android:textStyle="bold"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="20dp"
+            android:visibility="invisible"/>
+
+        <Button
+            android:id="@+id/mapsBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/custom_button"
+            android:text="View location"
+            android:layout_marginTop="15dp"
+            android:visibility="invisible"/>
+
+        <Button
+            android:id="@+id/gateBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/custom_button"
+            android:text="Use Parking Spot"
+            android:layout_marginTop="15dp"
+            android:visibility="invisible"/>
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>
